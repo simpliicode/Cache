@@ -9,7 +9,7 @@ set_time_limit(0);
 
 if($_SERVER['argc']==1 || in_array('-h', $_SERVER['argv']) || in_array('--help', $_SERVER['argv']))
 {
-	print "Usage: cache [OPTION]...\n\n";
+	print "Usage: ".__FILE__." [OPTION]...\n\n";
 	print "Options:\n";
 	print "\t-i,\t--ip=IP\t\tip address to listen to.\n";
 	print "\t-p,\t--port=PORT\tthe port to open for tcp traffic.\n";

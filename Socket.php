@@ -22,7 +22,7 @@ class Socket Extends Run
 				$this->e = 'Listening for connections on '.Bo.$this->ip.':'.$this->port.Bc;
 				socket_listen($this->sock);
 				
-				# Non block socket type
+				# Block socket type
 				socket_set_block($this->sock);
 				
 				$sock = $client = array();

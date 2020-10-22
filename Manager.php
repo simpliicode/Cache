@@ -49,7 +49,6 @@ class Manager
 						elseif(substr($buffer, -2)=="\n") $buffer = substr($buffer, 0, -1);
 						$json = gzdecode($buffer);
 						$value = $this->Payload($json);
-						//$len = strlen($value); $value = $len.':'.($value?$value:'');
 						if(!is_null($value)) socket_write($sock, $value, strlen($value)).chr(0);
 					}
 					socket_close($sock);
@@ -185,7 +184,7 @@ class Manager
 						# Start listening for connections
 						socket_listen($this->sock);
 				
-						# Non block socket type
+						# Block socket type
 						socket_set_block($this->sock);
 
 						$this->port = $__manager_port;
