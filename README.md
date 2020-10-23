@@ -7,7 +7,7 @@ Coming soon...
 
 ![Flow Chart](https://github.com/simpliicode/Cache/blob/main/flow-chart.jpg?raw=true)
 
-## Preformance Testing
+## Performance Testing
 
 | Test Platform | Operating system      | Kernel and CPU                           | CPU load averages                         | Processor information                            |
 | :------------ | :-------------------- | :--------------------------------------- | :---------------------------------------- | :----------------------------------------------- |
